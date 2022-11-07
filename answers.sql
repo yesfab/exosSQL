@@ -24,9 +24,8 @@ WHERE film.id = 43;
 DELETE FROM film WHERE film.slug LIKE 't%';
 
 --question 6
-SELECT * FROM user
+SELECT DISTINCT user.id,email,password,avatar,role,login FROM user
 INNER JOIN commentaire ON commentaire.id_user = user.id
-ORDER BY id_user ASC;
 
 --question 7
 SELECT * FROM film
@@ -44,3 +43,8 @@ ON film.id = commentaire.id_film;
 --question 9
 SELECT * FROM film
 where MONTH(date_sortie) = 06;
+
+--question 10
+SELECT DISTINCT user.id,email,password,avatar,role,login FROM user
+INNER JOIN commentaire ON commentaire.id_user = user.id
+WHERE role = 1;
