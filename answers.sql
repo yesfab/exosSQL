@@ -27,3 +27,11 @@ DELETE FROM film WHERE film.slug LIKE 't%';
 SELECT * FROM user
 INNER JOIN commentaire ON commentaire.id_user = user.id
 ORDER BY id_user ASC;
+
+--question 7
+SELECT * FROM film
+LEFT JOIN films_categs
+ON films_categs.id_film = film.id
+LEFT JOIN categorie
+ON categorie.id = films_categs.id_categorie
+WHERE categorie.id = 51;
