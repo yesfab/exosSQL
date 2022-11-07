@@ -35,3 +35,8 @@ ON films_categs.id_film = film.id
 LEFT JOIN categorie
 ON categorie.id = films_categs.id_categorie
 WHERE categorie.id = 51;
+
+--question 8
+SELECT AVG(note) from commentaire
+INNER JOIN film
+ON film.id = commentaire.id_film;
