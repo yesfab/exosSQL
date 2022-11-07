@@ -12,6 +12,11 @@ WHERE film.id=35;
 --question 3
 INSERT INTO `film` (`id`, `titre`, `slug`, `image`, `prix`, `description`, `date_sortie`) VALUES
 (20, 'Star Wars 1', 'star wars 1', 'Star_Wars_Logo.svg.png', 50, 'La Menace fantôme', '1999-10-13');
+INSERT INTO `films_categs` (`id_film`, `id_categorie`) VALUES
+(20, 49),
+(20, 53),
+(20, 52);
+
 
 
 --question 4
