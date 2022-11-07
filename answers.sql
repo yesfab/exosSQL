@@ -40,3 +40,7 @@ WHERE categorie.id = 51;
 SELECT AVG(note) from commentaire
 INNER JOIN film
 ON film.id = commentaire.id_film;
+
+--question 9
+SELECT * FROM film
+where MONTH(date_sortie) = 06;
