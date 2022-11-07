@@ -19,3 +19,6 @@ SELECT * FROM commentaire
 INNER JOIN film ON film.id = commentaire.id_film
 INNER JOIN user ON user.id = commentaire.id_user
 WHERE film.id = 43;
+
+--question 5
+DELETE FROM film WHERE film.slug LIKE 't%';
