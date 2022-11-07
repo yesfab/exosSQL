@@ -22,3 +22,8 @@ WHERE film.id = 43;
 
 --question 5
 DELETE FROM film WHERE film.slug LIKE 't%';
+
+--question 6
+SELECT * FROM user
+INNER JOIN commentaire ON commentaire.id_user = user.id
+ORDER BY id_user ASC;
